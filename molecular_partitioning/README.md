@@ -83,6 +83,4 @@ Similarly for the *in vivo* datasets.
 
 ## Random Forest Model
 
-The random forest classifiers were trained using the scikit-learn package (v0.24.2) in Python (v3.8.10), setting “n_estimators” to 200, “min_samples_leaf” to 2, and “n_jobs” to 4.26 Each molecule was transformed into a 1024-dimensional vector using the Chem.RDKFingerprint method from the open-source package RDKit (v2021.03.2).25 Each classifier was trained on 90% of the data. To train the MPNN models on the classification tasks, we used Chemprop (v1.3.1).27 The models took as input both the SMILES string representation of each molecule as well as a 200-dimensional vector generated using Chemprop and setting “features_generator” to rdkit_2d_normalized.28 Molecules were assigned to either the training set (80 %), validation set (10 %), or test set (10 %) using a scaffold split. All MPNNs were trained with a batch size of 50 for 50 epochs with an ensemble of 10 models per task. 
-
-Predictions for a held-out dataset of 1,498 fluorescent molecules were determined by majority voting. 
+Code for training and evaluating the random forest model is in the [jupyter notebook](RandomForest.ipynb). 
