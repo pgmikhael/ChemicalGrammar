@@ -3,6 +3,7 @@ Repository for work on understanding the chemistry of phase-separation (condensa
 
 Paper: [Title](url).
 
+Code used to develop and test the models in this paper is described in [molecular_partitioning](molecular_partitioning/README.md).
 
 For questions, contact:
 - Henry Kilgore: hkilgore@wi.mit.edu
