@@ -11,7 +11,7 @@ For questions, contact:
 
 # Cite
 ```
-@article{mikhael2023sybil,
+@article{,
   title={},
   author={},
   journal={},
